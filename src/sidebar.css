@@ -27,3 +27,33 @@
   border-top-right-radius: 10px;
   object-fit: cover;
 }
+.sidebar__stat {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.sidebar__stat > p {
+  color: gray;
+  font-size: 13px;
+  font-weight: 600;
+}
+.sidebar__statNumber {
+  font-weight: bold !important;
+  color: #0a66c2 !important;
+}
+.sidebar__stats {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid lightgray;
+}
+.sidebar__top > h4 {
+  font-size: 15px;
+  color: rgb(179, 172, 172);
+}
+
+.sidebar__top__ h2 {
+  font-size: 18px;
+}

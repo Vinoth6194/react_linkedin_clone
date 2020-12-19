@@ -10,8 +10,8 @@ function Sidebar() {
           alt=""
         />
         <Avatar className="sidebar__avatar"></Avatar>
-        <h2>Vinothkumar S</h2>
-        <h4>linkedin_vinoth@gmail.com</h4>
+        <h2>Vinothkumar</h2>
+        <h4>linkedin.vino@gmail.com</h4>
       </div>
       <div className="sidebar__stats">
         <div className="sidebar__stat">
