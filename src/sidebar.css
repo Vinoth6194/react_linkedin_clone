@@ -57,3 +57,11 @@
 .sidebar__top__ h2 {
   font-size: 18px;
 }
+.sidebar__bottom {
+  margin-top: 10px;
+  background-color: white;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
