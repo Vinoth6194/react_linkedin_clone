@@ -34,3 +34,7 @@
 .header__right {
   display: flex;
 }
+.headerOption__title {
+  font-size: 12px;
+  font-weight: 400;
+}
