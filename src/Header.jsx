@@ -26,6 +26,10 @@ function Header() {
         <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
         <HeaderOption Icon={ChatIcon} title="Messaging" />
         <HeaderOption Icon={NotificationsIcon} title="Notifications" />
+        <HeaderOption
+          avatar="https://compassionate-leakey-e9b16b.netlify.app/images/IG_Sonny.jpeg"
+          title="Vinoth"
+        />
       </div>
     </div>
   );

@@ -9,3 +9,8 @@
 .headerOption:hover {
   color: black;
 }
+.headerOption__icon {
+  -o-object-fit: contain;
+  height: 25px !important;
+  width: 25px !important;
+}
