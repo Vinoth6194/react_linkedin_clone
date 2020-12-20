@@ -8,7 +8,7 @@ function Post({ name, description, mesasge, photoUrl }) {
         <Avatar />
         <div className="post__info">
           <h2>Vinothkumar S</h2>
-          <p>description</p>
+          <p>Description</p>
         </div>
       </div>
       <div className="post__body">
