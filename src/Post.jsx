@@ -1,5 +1,5 @@
 import { Avatar } from "@material-ui/core";
-import { ChatOutlined, SendOutlined } from "@material-ui/icons";
+
 import React from "react";
 import InputOption from "./InputOption";
 import ThumbUpAltOutlinedIcon from "@material-ui/icons/ThumbUpAltOutlined";
@@ -13,7 +13,7 @@ function Post({ name, description, message, photoUrl }) {
       <div className="post__header">
         <Avatar />
         <div className="post__info">
-          <h2>{name} S</h2>
+          <h2>{name} </h2>
           <p>{description}</p>
         </div>
       </div>
