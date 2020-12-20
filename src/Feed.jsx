@@ -34,7 +34,7 @@ function Feed() {
       <Post
         name="Vinothkumar"
         description="Samle desc"
-        mesasge="sample message"
+        message="sample message"
       />
     </div>
   );
