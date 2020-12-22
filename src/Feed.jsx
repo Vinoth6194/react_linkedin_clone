@@ -10,17 +10,20 @@ import EventNoteIcon from "@material-ui/icons/EventNote";
 import Post from "./Post";
 import { db } from "./firebase";
 import firebase from "firebase";
+import { useSelector } from "react-redux";
+import { selectUser } from "./features/userSlice";
 
 function Feed() {
   const [input, setInput] = useState("");
   const [posts, setPosts] = useState([]);
+  const user = useSelector(selectUser);
   const sendPosts = (e) => {
     e.preventDefault();
     db.collection("posts").add({
-      name: "Vinothkumar S",
-      description: "This is a test",
+      name: user.displayName,
+      description: user.email,
       message: input,
-      photoUrl: "",
+      photoUrl: user.photoURL || "",
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
     setInput("");
