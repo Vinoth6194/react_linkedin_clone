@@ -7,7 +7,15 @@ import HeaderOption from "./HeaderOption";
 import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 import ChatIcon from "@material-ui/icons/Chat";
 import NotificationsIcon from "@material-ui/icons/Notifications";
+import { auth } from "./firebase";
+import { useDispatch } from "react-redux";
+import { logout } from "./features/userSlice";
 function Header() {
+  const dispatch = useDispatch();
+  const logoutOfApp = () => {
+    dispatch(logout());
+    auth.signOut();
+  };
   return (
     <div className="header">
       <div className="header__left">
@@ -28,7 +36,8 @@ function Header() {
         <HeaderOption Icon={NotificationsIcon} title="Notifications" />
         <HeaderOption
           avatar="https://compassionate-leakey-e9b16b.netlify.app/images/IG_Sonny.jpeg"
-          title="Vinoth"
+          title="Me"
+          onClick={logoutOfApp}
         />
       </div>
     </div>
